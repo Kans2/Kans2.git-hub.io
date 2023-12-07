@@ -1,0 +1,413 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    margin: 0;
+    padding:0;
+}
+nav 
+{
+    width:100%;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+html
+{
+    scroll-behavior: smooth;
+}
+nav logo
+{
+    font-size: 2rem;
+    cursor:pointer;
+    padding-left:10px;
+}
+.content p
+{
+    animation: text 3s ease-in-out;
+    position:absolute;
+    font-size:2rem;
+    opacity:0;
+    overflow: hidden;
+    left:12%;
+}
+@keyframes text
+{
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity:0;
+    }
+}
+.content p:nth-child(1)
+{
+    animation-delay:0s;
+}
+.content p:nth-child(2)
+{
+    animation-delay:3s;
+}
+.content p:nth-child(3)
+{
+    animation-delay:6s;
+}
+.content p:nth-child(4)
+{
+    animation-delay:9s;
+    
+}
+.menu-icon
+{ 
+
+    
+    display:none;
+}
+.active
+{
+    background-color:black;
+    color:white;
+}
+nav ul 
+{
+    display: flex;
+    list-style: none;
+}
+nav
+{
+    background-color:white;
+    height:10vh;
+    width:100%;
+    box-shadow: 5px 10px 8px 0.4 solid black;
+    position:sticky !important;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+nav ul li 
+
+{
+    padding:0px 30px;
+}
+nav ul
+{
+    padding-top:10px;
+}
+nav ul li a
+{
+    color:black !important;
+}
+nav ul li a:hover
+{
+    color:blue;
+}
+
+.content
+{
+   padding-top: 10rem;
+   margin-left:3rem;
+}
+
+span
+{
+    color:blue;
+}
+.content h1
+{
+    font-size:4rem;
+    
+}
+.intro img
+{
+    margin-top:100px;
+    border-radius: 50%;
+    width:55%;
+    height:40vh;
+    cursor: pointer;
+    margin-left: 70px;
+    z-index:100;
+}
+.spidey img
+{
+   width:14%;
+   height:30vh;
+   border-radius: 30%;
+   position:absolute;
+   margin-left:130px;
+   margin-top:2rem;
+   display:none;
+}
+body
+{
+    background-color:#e5e5e5;
+}
+.spidey img
+{
+   width:14%;
+   height:30vh;
+   
+}
+button
+{
+    background-color:blue;
+   color:white;
+    border-radius: 7px;
+    border:none;
+    outline:none;
+    display: inline-block;
+    font-size:1rem;
+    padding:10px;
+    cursor:pointer;
+    margin-top:0.3rem;
+
+}
+nav ul li a
+{
+    text-decoration: none;
+    color:black;
+    font-size:1.5rem;
+}
+.menu-icon img
+{
+    width:40px;
+    height:7vh;
+    cursor: pointer;
+    color:white;
+}
+.social img
+{
+    
+    width:15px;
+    height:2vh;
+    margin:1rem;
+}
+.social img:hover
+{
+    border:2px soild red;
+}
+.social
+{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top:35%;
+}
+.social img:hover
+{
+   color:blue !important;
+}
+#about
+{
+    margin-top: 1rem;
+}
+#about .about-content
+{
+    margin-left:5rem;
+}
+#skills
+{
+    margin-top:3rem;
+}
+.progress
+{
+    height:30px !important;
+    box-shadow:2px 5px 3px grey,-2px -2px 5px white;
+    
+}
+.progress-bar
+{
+    animation:over 0.9s ease-in-out  forwards;
+    opacity:1;
+
+}
+@keyframes over{
+    0%
+    {
+        opacity: 0;
+        width:0;
+    
+    }
+
+    100%
+    {
+        width:1;
+        
+    
+    }
+    
+    
+}
+.progress:hover
+{
+    box-shadow:2px 5px 3px grey,-2px -2px 5px black;
+    cursor:pointer;
+}
+#projects
+{
+    margin-top: 5rem;
+}
+
+.perform
+{
+    margin-left:0;
+    
+}
+
+.card-body img
+{
+    cursor:pointer;
+    width:200px;
+    height:180px;
+    padding-left:2rem;
+}
+#projects .card
+{
+    width:300px;
+    margin:2rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height:40vh;
+    transition:1s;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.4);
+    inset :4px 4px 10px  white;
+    border:none;
+}
+.card-body .pro-content 
+{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color:#1f3d4738;
+    width:100%;
+    height:100vh;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    transform:translateY(50%);
+    transition:1s;
+
+}
+.pro-content p
+{
+    width:100%;
+    
+}
+.card:hover .pro-content
+{
+  transform: translateY(0);
+  transition: 1s;
+    
+}
+form div
+{
+  margin:1rem;
+}
+#contact
+{
+    background-color: aquamarine;
+}
+input
+{
+    padding: 20px;
+}
+footer
+{
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:10vh;
+}
+footer a
+{
+    text-decoration:none;
+    color:white;
+    padding:0px 20px;
+    margin-top:20px;
+}
+.second
+{
+    align-items: center;
+}
+#photo
+
+{
+    width:100%;
+    height:80vh;
+    background-image: url(3235319.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.active
+{
+    margin-left: 0;
+}
+.animate
+{
+    text-align:center;
+}
+@media screen and (max-width:568px){
+    .intro img
+    {
+        
+        width:80%;
+        margin-right:20px;
+    }
+    .content
+    {
+        width:100%;
+    }
+    #projects .card
+    {
+        margin-left:3rem;
+    }
+}
+
+
+@media  screen and (max-width:958px) {
+
+    .menu-icon
+    {
+        display: block;
+        
+    } 
+    nav ul
+    {
+       position: absolute;
+       top:90%;
+       display:flex;
+       flex-direction: column;
+       background-color: blue;
+       width:50%;
+       height:200vh;
+       margin-left: -100rem;
+       overflow: hidden;
+    }
+    nav ul li
+    {        
+        padding: 1rem;
+        overflow: hidden;
+    }
+    
+}
